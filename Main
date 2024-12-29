@@ -92,7 +92,7 @@ end)
 universalsSection:Button("Universal Script (ScriptBlox GUI)", function()
     loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-ScriptBlox-GUI-6500"))()
     print("Universal Script (ScriptBlox GUI) Loaded")
-end ```lua
+end)
 
 local fightingTab = window:Tab("Fighting")
 local fightingSection = fightingTab:Section("Fighting Scripts")
@@ -534,5 +534,4 @@ end)
 additionalTab.newButton("🚓 Emergency Response - Liberty County Respawn", "Liberty County respawn script for quick recovery.", function()
     loadstring(game:HttpGet("https://scriptblox.com/script/Emergency-Response:-Liberty-County-Rrespawn-where-died-6494"))()
 end)
-
 -- End of Complete Script Hub
