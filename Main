@@ -19,11 +19,11 @@ playerSection:Slider("Walkspeed", 250, 16, function(value)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
 end)
 
-playerSection:newButton("⚡ FPS Booster", "Improves game performance", function()
+playerSection:Button("⚡ FPS Booster", "Improves game performance", function()
     setfpscap(1000)
 end)
 
-playerSection:newButton("⏲️ Anti-AFK", "Prevents being kicked", function()
+playerSection:Button("⏲️ Anti-AFK", "Prevents being kicked", function()
     local vu = game:GetService("VirtualUser  ")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
         vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
