@@ -134,7 +134,6 @@ roleplaySection:Button("Brookhaven", function()
 end)
 
 local toolsTab = window:Tab("🔧 Tools")
-toolsTab.newLabel("⚙️ Performance Tools")
 
 toolsTab.newButton("⚡ FPS Booster", "Improves game performance", function()
     setfpscap(1000)
@@ -153,10 +152,6 @@ local additionalTab = window:Tab("🎮 Additional Scripts")
 
 additionalTab.newButton("🔫 Arsenal", "Shooter Game Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/Unique Hub/main/arsenal"))()
-end)
-
-additionalTab.newButton("🏃 Speed Run 4", "Speedrun Challenge", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Speedrun-4-Script-25194"))()
 end)
 
 additionalTab.newButton("💣 Super Bomb Survival", "Explosive Survival Game", function()
@@ -205,10 +200,6 @@ end)
 
 additionalTab.newButton("🎵 Friday Night Bloxxin' - Bloxxin Updated Autoplayer", "Autoplayer script for Friday Night Bloxxin'.", function()
     loadstring(game:HttpGet("https://scriptblox.com/script/GAME-OVER-Friday-Night-Bloxxin'-Bloxxin-New-Updated-Autoplayer-6421"))()
-end)
-
-additionalTab.newButton("🔪 Universal Fake MM2 GUI", "Fake MM2 GUI with universal compatibility.", function()
-    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Universal-FAKE-MM2-GUI-5847"))()
 end)
 
 additionalTab.newButton("🔨 Destroy the Noob - Buy Everything", "Script to buy everything in Destroy the Noob game.", function()
@@ -261,10 +252,6 @@ end)
 
 additionalTab.newButton("💥 Chaos OP Script", "OP script for Chaos game with all features unlocked.", function()
     loadstring(game:HttpGet("https://scriptblox.com/script/CHAOS-OP-SCRIPT-6076"))()
-end)
-
-additionalTab.newButton("⚽ Ball and Axe - Auto Win OP", "Auto win script for Ball and Axe game.", function()
-    loadstring(game:HttpGet("https://scriptblox.com/script/ball-and-axe-Auto-Win-OP-6209"))()
 end)
 
 additionalTab.newButton("😱 Apeirophobia - OP Script", "OP script for Apeirophobia with various hacks.", function()
