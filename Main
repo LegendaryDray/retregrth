@@ -1,0 +1,245 @@
+-- Load the UI Library
+local Fun = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/nightmares.fun-UI-Library/main/source.lua"))()
+
+local window = Fun.Create("Ultimate Script Hub")
+
+-- Home Tab
+local homeTab = window:Tab("Home")
+local homeSection = homeTab:Section("Welcome to the Ultimate Script Hub")
+homeSection:Label("Latest Updates: Check Discord for updates!")
+homeSection:Button("Open Discord", function()
+    setclipboard("https://discord.gg/kqyz9Sww3e") -- Copies the Discord link to clipboard
+    print("Discord link copied to clipboard!")
+end)
+
+-- Player Settings Tab
+local playerTab = window:Tab("Player Settings")
+local playerSection = playerTab:Section("Player Controls")
+
+playerSection:Slider("Walkspeed", 250, 16, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+playerSection:Slider("JumpPower", 500, 50, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
+playerSection:Toggle("Godmode", function(enabled)
+    getgenv().godmode = enabled
+    while enabled do
+        wait()
+        game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+    end
+end)
+
+playerSection:Button("Heal Player", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth
+end)
+
+-- Obbies Section
+local obbiesTab = window:Tab("Obbies")
+local obbiesSection = obbiesTab:Section("Obby Scripts")
+
+obbiesSection:Button("Easy Color Switch Obby", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Easy-Color-Switch-Obby!-Infinite-coin-n-Instant-Win-and-more-6611"))()
+    print("Easy Color Switch Obby Loaded")
+end)
+
+-- Simulators Section
+local simulatorsTab = window:Tab("Simulators")
+local simulatorsSection = simulatorsTab:Section("Simulator Scripts")
+
+simulatorsSection:Button("Dunking Simulator", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Dunking-Simulator-mxkxkks-dodo-gui-source-6512"))()
+    print("Dunking Simulator Loaded")
+end)
+
+simulatorsSection:Button("Wacky Wizards GHOST Candy Farm", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Wacky-Wizards-GHOST-Candy-Farm-6499"))()
+    print("Wacky Wizards GHOST Candy Farm Loaded")
+end)
+
+simulatorsSection:Button("Sushi Restaurant Tycoon", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Sushi-Restaurant-Tycoon-Infinite-Golden-Eggs-6390"))()
+    print("Sushi Restaurant Tycoon Loaded")
+end)
+
+simulatorsSection:Button("10X Gun Simulator", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/10X-Gun-Simulator-Infinite-Money-6404"))()
+    print("10X Gun Simulator Loaded")
+end)
+
+-- Admin Scripts Section
+local adminTab = window:Tab("Admin Scripts")
+local adminSection = adminTab:Section("Admin Scripts")
+
+adminSection:Button("Infinite Yield", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'), true))()
+    print("Infinite Yield Loaded")
+end)
+
+adminSection:Button("Nameless", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+    print("Nameless Loaded")
+end)
+
+-- Universals Section
+local universalsTab = window:Tab("Universals")
+local universalsSection = universalsTab:Section("Universal Scripts")
+
+universalsSection:Button("Universal Script (No Cooldown)", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-no-cooldown-6517"))()
+    print("Universal Script (No Cooldown) Loaded")
+end)
+
+universalsSection:Button("Universal Script (ScriptBlox GUI)", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-ScriptBlox-GUI-6500"))()
+    print("Universal Script (ScriptBlox GUI) Loaded")
+end)
+
+universalsSection:Button("Universal Script (Another GUI)", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Another-GUI-6501"))()
+    print("Universal Script (Another GUI) Loaded")
+end)
+
+-- Fighting Section
+local fightingTab = window:Tab("Fighting")
+local fightingSection = fightingTab:Section("Fighting Scripts")
+
+fightingSection:Button("Combat Simulator", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Combat-Simulator-6510"))()
+    print("Combat Simulator Loaded")
+end)
+
+fightingSection:Button("Murder Mystery 2", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Murder-Mystery-2-6505"))()
+    print("Murder Mystery 2 Loaded")
+end)
+
+-- Prison Section
+local prisonTab = window:Tab("Prison")
+local prisonSection = prisonTab:Section("Prison Scripts")
+
+prisonSection:Button("Prison Life", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Prison-Life-6508"))()
+    print("Prison Life Loaded")
+end)
+
+-- Roleplay Section
+local roleplayTab = window:Tab("Roleplay")
+local roleplaySection = roleplayTab:Section("Roleplay Scripts")
+
+roleplaySection:Button("Brookhaven", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Brookhaven-6511"))()
+    print("Brookhaven Loaded")
+end)
+
+roleplaySection:Button("Adopt Me", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Adopt-Me-6509"))()
+    print("Adopt Me Loaded")
+end)
+
+-- Finalize the UI
+window:Show() ```lua
+-- Load the UI Library
+local Fun = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/nightmares.fun-UI-Library/main/source.lua"))()
+
+local window = Fun.Create("Ultimate Script Hub")
+
+-- Home Tab
+local homeTab = window:Tab("Home")
+local homeSection = homeTab:Section("Welcome to the Ultimate Script Hub")
+homeSection:Label("Latest Updates: Check Discord for updates!")
+homeSection:Button("Open Discord", function()
+    setclipboard("https://discord.gg/kqyz9Sww3e") -- Copies the Discord link to clipboard
+    print("Discord link copied to clipboard!")
+end)
+
+-- Player Settings Tab
+local playerTab = window:Tab("Player Settings")
+local playerSection = playerTab:Section("Player Controls")
+
+playerSection:Slider("Walkspeed", 250, 16, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+
+playerSection:Slider("JumpPower", 500, 50, function(value)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+end)
+
+playerSection:Toggle("Godmode", function(enabled)
+    getgenv().godmode = enabled
+    while enabled do
+        wait()
+        game.Players.LocalPlayer.Character.Humanoid.Health = math.huge
+    end
+end)
+
+playerSection:Button("Heal Player", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = game.Players.LocalPlayer.Character.Humanoid.MaxHealth
+end)
+
+-- Obbies Section
+local obbiesTab = window:Tab("Obbies")
+local obbiesSection = obbiesTab:Section("Obby Scripts")
+
+obbiesSection:Button("Easy Color Switch Obby", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Easy-Color-Switch-Obby!-Infinite-coin-n-Instant-Win-and-more-6611"))()
+    print("Easy Color Switch Obby Loaded")
+end)
+
+-- Simulators Section
+local simulatorsTab = window:Tab("Simulators")
+local simulatorsSection = simulatorsTab:Section("Simulator Scripts")
+
+simulatorsSection:Button("Dunking Simulator", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Dunking-Simulator-mxkxkks-dodo-gui-source-6512"))()
+    print("Dunking Simulator Loaded")
+end)
+
+simulatorsSection:Button("Wacky Wizards GHOST Candy Farm", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Wacky-Wizards-GHOST-Candy-Farm-6499"))()
+    print("Wacky Wizards GHOST Candy Farm Loaded")
+end)
+
+simulatorsSection:Button("Sushi Restaurant Tycoon", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Sushi-Restaurant-Tycoon-Infinite-Golden-Eggs-6390"))()
+    print("Sushi Restaurant Tycoon Loaded")
+end)
+
+simulatorsSection:Button("10X Gun Simulator", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/10X-Gun-Simulator-Infinite-Money-6404"))()
+    print("10X Gun Simulator Loaded")
+end)
+
+-- Admin Scripts Section
+local adminTab = window:Tab("Admin Scripts")
+local adminSection = adminTab:Section("Admin Scripts")
+
+adminSection:Button("Infinite Yield", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'), true))()
+    print("Infinite Yield Loaded")
+end)
+
+adminSection:Button("Nameless", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+    print("Nameless Loaded")
+end)
+
+-- Universals Section
+local universalsTab = window:Tab("Universals")
+local universalsSection = universalsTab:Section("Universal Scripts")
+
+universalsSection:Button("Universal Script (No Cooldown)", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-no-cooldown-6517"))()
+    print("Universal Script (No Cooldown) Loaded")
+end)
+
+universalsSection:Button("Universal Script (ScriptBlox GUI)", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-ScriptBlox-GUI-6500"))()
+    print("Universal Script (ScriptBlox GUI) Loaded")
+end)
+
+universalsSection:Button("Universal Script (Another GUI)", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Another-GUI-6501"))()
+    print("Universal Script (
